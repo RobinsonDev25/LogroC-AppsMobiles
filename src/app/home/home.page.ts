@@ -8,5 +8,16 @@ import { Component } from '@angular/core';
 export class HomePage {
 
   constructor() {}
+  nombres: string[] = [];
+  nuevoNombre: string = '';
 
+  agregarNombre() {
+    if (this.nuevoNombre.trim()) {
+      this.nombres.push(this.nuevoNombre.trim());
+      this.nombres.sort(); // Ordena los nombres alfabéticamente
+      this.nuevoNombre = ''; // Limpia el campo de entrada
+    }
+
+  }
+  
 }
