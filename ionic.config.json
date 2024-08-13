@@ -1,0 +1,7 @@
+{
+  "name": "LogroC",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
